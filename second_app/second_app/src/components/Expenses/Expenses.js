@@ -3,6 +3,7 @@ import ExpenseItem from './ExpenseItem';
 import './Expenses.css'
 import Card from '../UI/Card';
 function Expenses(Propsdata) {
+    //each ExpenseItem component has it's own state even though they are being create multiple times
     return (
         <Card className='expenses'>
 
@@ -11,6 +12,7 @@ function Expenses(Propsdata) {
                 amount={Propsdata.items[0].amount}
                 date={Propsdata.items[0].date}
             ></ExpenseItem>
+            
             <ExpenseItem
                 title={Propsdata.items[1].title}
                 amount={Propsdata.items[1].amount}

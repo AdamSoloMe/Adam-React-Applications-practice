@@ -8,6 +8,9 @@ export default function App() {
   //when the eventhandler on click is pressed
   const [price, setPrice] = useState(100);
 
+ //the purpose of the state hook in react is to make sure the entire componenet function is called again/re-exeuted when the state updateing function (setPrice) is called 
+ //by calling this function your telling react that you want to assign a new value to this state and that the component function should re-evaulted and re-exectued to reflect the changes specifed within the state updating fucntion
+
   function clickHandler() {
     setPrice(75);
   }

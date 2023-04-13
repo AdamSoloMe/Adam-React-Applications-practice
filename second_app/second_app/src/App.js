@@ -1,8 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
-//import ExpenseItem from './componenets/ExpenseItem';
-import NewExpenseForm from './componenets/NewExpense/NewExpenseForm';
-import Expenses from './componenets/Expenses/Expenses';
+import ExpenseForm from './components/NewExpensesComponents/ExpenseForm';
+import Expenses from './components/Expenses/Expenses';
+import FormComponent from './components/NewExpensesComponents/FormComponent';
 
 function App() {
   const expenses = [ //here I am creating a JavaScript Array with a bunch of javaScripit Objects
@@ -31,8 +30,10 @@ function App() {
 
   return (
     <div>
-      <NewExpenseForm/>
+      <ExpenseForm />
       <Expenses items={expenses}></Expenses>
+      
+      
     </div>
 
   );

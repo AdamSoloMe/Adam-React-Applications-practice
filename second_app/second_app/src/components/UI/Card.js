@@ -14,13 +14,13 @@ function Card(props) {
     //and the value of the special children prop
     /// is the content within the opening and closing tags of your special comoponent
     //
-    // 
-    // example 
+    //
+    // example
     // <Card className='expense-item'>
 
     /* ALL OF THE CONTENT IN THIS CARD TAG IS the value within the props.children variable
-             <ExpenseDate date={props.date}></ExpenseDate>
-             {/* the alternative Syntax is a self closing tag of
+             <ExpenseDate date={props.date}></ExpenseDate>*/
+             /*{ the alternative Syntax is a self closing tag of
                  <ExpenseDate/>
                  }   
               
@@ -32,11 +32,10 @@ function Card(props) {
          {props.amount}
      </div>
  </div>
- */
+ </Card >
 
-    //</Card >
-
-
+*/
 }
+
 
 export default Card;
